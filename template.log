@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2015.9.17)  17 SEP 2015 16:40
+entering extended mode
+**template.tex
+(template.tex
+! Undefined control sequence.
+l.40 \NeedsTeXFormat
+                    {LaTeX2e}% LaTeX 2.09 can't be used (nor non-LaTeX)
+? 
+! Emergency stop.
+l.40 \NeedsTeXFormat
+                    {LaTeX2e}% LaTeX 2.09 can't be used (nor non-LaTeX)
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
