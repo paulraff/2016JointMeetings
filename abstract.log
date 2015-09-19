@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.9.18)  19 SEP 2015 11:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.9.18)  19 SEP 2015 11:55
 entering extended mode
-**template.tex
-(d:\git\JointMeetings2016\template.tex
+**D:/git/JointMeetings2016/abstract.tex
+(D:/git/JointMeetings2016/abstract.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -105,7 +105,7 @@ Package: amsthm 2004/08/06 v2.20
 \c@defn=\count101
 \c@rem=\count102
 
-(d:\git\JointMeetings2016\template.aux)
+No file abstract.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
@@ -118,43 +118,16 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
- [1
+[1
 
-] [2] [3] [4] [5] [6] [7] [8]
-[9] [10] [11] [12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 856.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 856.
-
-[13] [14] [15] [16] [17] [18] [19] [20] [21] [22]
-Overfull \hbox (39.76697pt too wide) in paragraph at lines 1378--1386
-\OT1/cmr/m/n/10 trol se-quences: []\OT1/cmtt/m/n/10 \log\OT1/cmr/m/n/10 , []\OT
-1/cmtt/m/n/10 \sin\OT1/cmr/m/n/10 , []\OT1/cmtt/m/n/10 \lim\OT1/cmr/m/n/10 . Th
-e \OT1/cmtt/m/n/10 amsmath \OT1/cmr/m/n/10 pack-age pro-vides \OT1/cmtt/m/n/10 
-\DeclareMathOperator|
- []
-
-[23] [24] [25] [26] [27] [28] [29]
-\marginrulewidth=\dimen112
- [30] [31] [32] [33]
-Overfull \hbox (43.49661pt too wide) in paragraph at lines 1963--1963
-[]\OT1/cmtt/m/n/10 \begin{split}\abs{I_1}&=\left\lvert \int_\Omega gRu\,d\Omega
-\right\rvert\\[] |
- []
-
-[34] [35] [36] [37] [38] [39] [40] [41] [42]
-(d:\git\JointMeetings2016\template.aux) ) 
+] [2] (D:\git\JointMeetings2016\abstract.aux) ) 
 Here is how much of TeX's memory you used:
- 1128 strings out of 493922
- 12074 string characters out of 3147302
- 70833 words of memory out of 3000000
- 4455 multiletter control sequences out of 15000+200000
- 15171 words of font info for 55 fonts, out of 3000000 for 9000
+ 987 strings out of 493922
+ 10500 string characters out of 3147302
+ 62325 words of memory out of 3000000
+ 4335 multiletter control sequences out of 15000+200000
+ 8614 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,23n,28p,513b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,20p,538b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on template.dvi (42 pages, 129736 bytes).
+Output written on abstract.dvi (2 pages, 4872 bytes).

@@ -1,0 +1,169 @@
+%%% ====================================================================
+%%% @LaTeX-file{
+%%%   filename  = "template.tex",
+%%%   version   = "1.0",
+%%%   date      = "1999/11/15",
+%%%   time      = "15:09:17 EST",
+%%%   checksum  = "07762 2342 7811 82371",
+%%%   author    = "American Mathematical Society",
+%%%   copyright = "Copyright 1995, 1999 American Mathematical Society,
+%%%                all rights reserved.  Copying of this file is
+%%%                authorized only if either:
+%%%                (1) you make absolutely no changes to your copy,
+%%%                including name; OR
+%%%                (2) if you do make changes, you first rename it
+%%%                to some other name.",
+%%%   address   = "American Mathematical Society,
+%%%                Technical Support,
+%%%                Electronic Products and Services,
+%%%                P. O. Box 6248,
+%%%                Providence, RI 02940,
+%%%                USA",
+%%%   telephone = "401-455-4080 or (in the USA and Canada)
+%%%                800-321-4AMS (321-4267)",
+%%%   FAX       = "401-331-3842",
+%%%   email     = "tech-support@ams.org (Internet)",
+%%%   codetable = "ISO/ASCII",
+%%%   keywords  = "latex, amsmath, examples, documentation",
+%%%   supported = "yes",
+%%%   abstract  = "This is a test file containing extensive examples of
+%%%                mathematical constructs supported by the amsmath
+%%%                package.",
+%%%   docstring = "The checksum field above contains a CRC-16
+%%%                checksum as the first value, followed by the
+%%%                equivalent of the standard UNIX wc (word
+%%%                count) utility output of lines, words, and
+%%%                characters.  This is produced by Robert
+%%%                Solovay's checksum utility.",
+%%% }
+%%% ====================================================================
+\NeedsTeXFormat{LaTeX2e}% LaTeX 2.09 can't be used (nor non-LaTeX)
+[1994/12/01]% LaTeX date must December 1994 or later
+\documentclass[draft]{article}
+\pagestyle{headings}
+
+\title{Preparing Mathematicians for Big Data Careers: An Industry's Point of View}
+\author{Paul Raff}
+\date{September 22, 2015}
+
+\usepackage{amsmath,amsthm}
+
+%    Some definitions useful in producing this sort of documentation:
+\chardef\bslash=`\\ % p. 424, TeXbook
+%    Normalized (nonbold, nonitalic) tt font, to avoid font
+%    substitution warning messages if tt is used inside section
+%    headings and other places where odd font combinations might
+%    result.
+\newcommand{\ntt}{\normalfont\ttfamily}
+%    command name
+\newcommand{\cn}[1]{{\protect\ntt\bslash#1}}
+%    LaTeX package name
+\newcommand{\pkg}[1]{{\protect\ntt#1}}
+%    File name
+\newcommand{\fn}[1]{{\protect\ntt#1}}
+%    environment name
+\newcommand{\env}[1]{{\protect\ntt#1}}
+\hfuzz1pc % Don't bother to report overfull boxes if overage is < 1pc
+
+%       Theorem environments
+
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[section]
+\newtheorem*{notation}{Notation}
+
+%\numberwithin{equation}{section}
+
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\secref}[1]{\S\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+
+\newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
+
+%       Math definitions
+
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\st}{\sigma}
+\newcommand{\XcY}{{(X,Y)}}
+\newcommand{\SX}{{S_X}}
+\newcommand{\SY}{{S_Y}}
+\newcommand{\SXY}{{S_{X,Y}}}
+\newcommand{\SXgYy}{{S_{X|Y}(y)}}
+\newcommand{\Cw}[1]{{\hat C_#1(X|Y)}}
+\newcommand{\G}{{G(X|Y)}}
+\newcommand{\PY}{{P_{\mathcal{Y}}}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\wh}{\widehat}
+
+\DeclareMathOperator{\per}{per}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\non}{non}
+\DeclareMathOperator{\cf}{cf}
+\DeclareMathOperator{\add}{add}
+\DeclareMathOperator{\Cham}{Cham}
+\DeclareMathOperator{\IM}{Im}
+\DeclareMathOperator{\esssup}{ess\,sup}
+\DeclareMathOperator{\meas}{meas}
+\DeclareMathOperator{\seg}{seg}
+
+%    \interval is used to provide better spacing after a [ that
+%    is used as a closing delimiter.
+\newcommand{\interval}[1]{\mathinner{#1}}
+
+%    Notation for an expression evaluated at a particular condition. The
+%    optional argument can be used to override automatic sizing of the
+%    right vert bar, e.g. \eval[\biggr]{...}_{...}
+\newcommand{\eval}[2][\right]{\relax
+  \ifx#1\right\relax \left.\fi#2#1\rvert}
+
+%    Enclose the argument in vert-bar delimiters:
+\newcommand{\envert}[1]{\left\lvert#1\right\rvert}
+\let\abs=\envert
+
+%    Enclose the argument in double-vert-bar delimiters:
+\newcommand{\enVert}[1]{\left\lVert#1\right\rVert}
+\let\norm=\enVert
+
+\begin{document}
+\maketitle
+\markboth{Preparing mathematicians for big data careers}
+{Preparing mathematicians for big data careers}
+\renewcommand{\sectionmark}[1]{}
+
+\section{Summary}
+
+While the Big Data industry is growing rapidly, it is still in its early stages as it relates to a common understanding and identification of the complete skillset needed to be a top-notch data scientist in the industry. While being a mathematics major provides a great foundation for what's required to be a good data scientist, we discuss what else is necessary. We will also discuss the core areas that are typically lacking from college math departments. 
+
+\section{What Math Departments Need For Supporting Aspiring Data Scientists}
+\subsection{Increased Emphasis on Scientific Computing}
+While a separate degree in Computer Science is always a benefit for math majors, math departments can help out their students by ensuring that they have good working knowledge both of object-oriented programming, algorithms, and scientific computing. Requiring a minor in computer science for would-be data scientists would be a great step for math departments. 
+
+\subsection{Connections to Industry}
+A large number of math departments focus their curriculum towards careers that remain in academia. As a result, they tend to learn towards the theoretical. However, math majors typically have excellent quantitiative skills that are heavily in demand by all slices of industry. Computer Science and Engineering departments typically do a much better job at fostering and maintaining these connections to industry, and there is no reason that Mathematics departments cannot benefit in the same way. 
+
+\subsection{Realistic Data Analysis Exercises}
+In almost all ``big data'' programs at universities, the capstone projects rarely are rich and detailed enough to be representative of data science work that is performed in the industry. There is a fundamental difference in what's possible when dealing with data that can be loaded on a single box versus data that is so large that it must be distributed - only the latter can truly be called ``big data''. 
+
+\subsection{Data Science, not Data Engineering}
+Often lost in the excitement about big data is the notion that there two distinct professions emerging: data scientists and data engineers. Mathematics departments should focus their students on becoming the former. 
+
+\subsection{A Nudge Towards Graduate School}
+While seemingly contradictory to the other points in this section, in reality a lot of opportunities are only effectively available to candidates with more than just an undergraduate degree. So while there's a lot that math departments can do for their undergraduates to prepare them for big data careers, they must also recognize that graduate school is still a good next step in their progress. 
+
+\section{About the Speaker}
+
+Paul Raff is a Principal Data Scientist in Microsoft's Analysis and Experimentation group. He works to accelerate innovation via trutworthy analysis and experimentation, primarily in the areas of Bing and Windows. He received his PhD in Mathematics at Rutgers University under the supervision of Doron Zeilberger, and prior to Microsoft he was an applied researcher in the Supply Chain Optimization Group at Amazon.com. 
+
+\end{document}
+\endinput
