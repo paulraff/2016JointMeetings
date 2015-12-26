@@ -46,7 +46,6 @@ namespace Ramsey
         /// </summary>
         public void Randomize(Random rand)
         {
-            
             var len = edges.Count;
             for (var i=0; i<len; i++)
             {
@@ -56,6 +55,12 @@ namespace Ramsey
                 else
                     edges[i] = false;
             }
+        }
+
+        public void Randomize()
+        {
+            var rand = new Random();
+            Randomize(rand);
         }
 
         /// <summary>
